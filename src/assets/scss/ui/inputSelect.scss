@@ -1,0 +1,84 @@
+.form-select {
+	//--bs-form-select-bg-img: url(
+	//	data:image/svg + xml,
+	//	%3csvgxmlns='http://www.w3.org/2000/svg'viewBox='0 0 16 16'%3e%3cpathfill='none'stroke='%23263238'stroke-linecap='round'stroke-linejoin='round'stroke-width='2'd='m2 5 6 6 6-6'/%3e%3c/svg%3e
+	//) !important;
+	display: block;
+	width: 100%;
+	padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+	font-size: 0.8rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: transparent;
+	background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+	background-repeat: no-repeat;
+	background-position: right 0.75rem center;
+	background-size: 16px 12px;
+	border: var(--bs-border-width) solid #e9ecef;
+	border-radius: var(--bs-border-radius);
+	box-shadow: unset;
+	transition:
+		border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
+	appearance: none;
+
+	/* custom */
+	border: 1px solid #dee2e6;
+}
+
+.app-ui-select {
+	.app-ui-select-formgroup {
+		margin-bottom: 0 !important;
+	}
+
+	.form-select:focus {
+		color: $app-body-color;
+		background-color: $app-body-bg;
+		border-color: #86b7fe;
+		outline: 0;
+		box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+	}
+}
+
+.app-ui-select.was-validated {
+	/* valid **************/
+	.is-valid {
+		display: block;
+	}
+
+	/* invalid **************/
+	.is-invalid {
+		display: block;
+	}
+
+	.form-select:valid:focus,
+	.form-select.is-valid:focus {
+		border-color: $app-form-valid-border-color;
+		box-shadow: 0 0 0 0.25rem rgba(var(--app-success-rgb), 0.25);
+	}
+	.form-select:invalid:focus,
+	.form-select.is-invalid:focus {
+		border-color: $app-form-invalid-border-color;
+		box-shadow: 0 0 0 0.25rem rgba(var(--app-danger-rgb), 0.25);
+	}
+
+	.is-valid ~ .valid-feedback {
+		display: block;
+	}
+
+	.is-invalid ~ .invalid-feedback {
+		display: block;
+	}
+
+	.invalid-feedback.is-valid {
+		display: none;
+	}
+}
+
+.app-ui-select.was-validated :valid ~ .valid-feedback {
+	display: block;
+}
+.app-ui-select.was-validated :invalid ~ .invalid-feedback {
+	display: block;
+}

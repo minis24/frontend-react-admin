@@ -1,0 +1,13 @@
+@import 'ui/dialog';
+@import 'ui/inputField';
+@import 'ui/treeview.scss';
+@import 'ui/dataTable.scss';
+@import 'ui/inputSelect';
+@import 'ui/offcanvas';
+@import 'ui/checkbox';
+
+$colors: #ff0000;
+
+.test {
+	background-color: $colors;
+}

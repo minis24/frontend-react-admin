@@ -1,0 +1,9 @@
+.form-check-input {
+	&.check-light-info {
+		background-color: #cbecff;
+	}
+	&.info:checked {
+		background-color: #009efb !important;
+		border-color: #009efb !important;
+	}
+}

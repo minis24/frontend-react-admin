@@ -1,0 +1,24 @@
+#hero {
+	padding: 64px 32px;
+	text-align: center;
+	.font-weight-bold {
+		font-weight: 700 !important;
+	}
+	.text-h3 {
+		font-size: 3rem !important;
+		font-weight: 400;
+		line-height: 3.125rem;
+		letter-spacing: normal !important;
+		font-family: 'Roboto', sans-serif !important;
+		text-transform: none !important;
+	}
+	.tagline {
+		background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+.mt-3 {
+	margin-top: 12px !important;
+}
