@@ -35,6 +35,9 @@ import '@/assets/monster-admin/css/ui.dynatree.css';
 
 import '@/assets/scss/App.scss';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')!)
+        .render(
+            <   App />
+        );
 
 loadExternalJS();
